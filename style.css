@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 .heading{
     text-align: center;
@@ -27,10 +28,10 @@
       filter: hue-rotate(360deg);
     }
   }
-  
+
 .texthead{
     margin-top: 50px;
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
     color: #fff;
 }
@@ -38,6 +39,12 @@
     text-align: center;
     color: #fff;
     margin-top: 20px;
+}
+.form-heading{
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 35px;
 }
 .form-container{
     margin-top: 50px;
@@ -59,12 +66,49 @@ input[type="text"], input[type="email"], input[type="password"],input[type="tel"
     padding: 10px;
     margin: 10px 0;
     border-radius: 29px;
-    border: 2px solid #0072ff;
+    border: 2px solid #4917ae;
     outline: none;
     font-size: 1.2em;
-    background-color: rgba(17, 104, 197, 0.397);
+    background-color: rgba(21, 22, 23, 0.397);
+    color: #fff;
 }
 .label-name{
     color: #00ddff;
     text-shadow: 1px 1px 5px #000000bd;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 29px;
+    border: 2px solid #0072ff;
+    outline: none;
+    font-size: 1.2em;
+    background-color: #0072ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.member-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.class2{
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding: 0 28px 0 30px;
+}
+
+
+
+.question{
+    margin-top: 10px;
+}
+.radio{
+    margin: 10px 0;
+    font-size: larger;
+    font-weight: 500;
 }
