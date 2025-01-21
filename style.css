@@ -59,7 +59,7 @@
     border: 2px solid #fff;
     border-radius: 29px;
     padding: 30px;
-    background-color: rgba(236, 226, 226, 0.364);
+    background-color: rgba(236, 226, 226, 0.205);
 }
 
 input[type="text"], input[type="email"], input[type="password"],input[type="tel"]{
