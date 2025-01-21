@@ -43,7 +43,7 @@
 .form-heading{
     text-align: center;
     font-size: 3em;
-    color: #fff;
+    color: #fc6601;
     margin-bottom: 35px;
 }
 .form-container{
@@ -58,7 +58,7 @@
     border: 2px solid #fff;
     border-radius: 29px;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.238);
+    background-color: rgba(236, 226, 226, 0.364);
 }
 
 input[type="text"], input[type="email"], input[type="password"],input[type="tel"]{
@@ -73,7 +73,8 @@ input[type="text"], input[type="email"], input[type="password"],input[type="tel"
     color: #fff;
 }
 .label-name{
-    color: #00ddff;
+    color: #b1aebb;
+    font-size: 20px;
     text-shadow: 1px 1px 5px #000000bd;
 }
 
@@ -82,10 +83,10 @@ input[type="submit"]{
     padding: 10px;
     margin: 10px 0;
     border-radius: 29px;
-    border: 2px solid #0072ff;
+    border: 2px solid #a095af;
     outline: none;
     font-size: 1.2em;
-    background-color: #0072ff;
+    background-color: #a095af;
     color: #fff;
     cursor: pointer;
 }
@@ -99,16 +100,35 @@ input[type="submit"]{
 .class2{
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
-    padding: 0 28px 0 30px;
+    padding: 0 5px 0 5px;
 }
 
 
-
+.car-type{
+    color: #fff;
+    font-size: 20px;
+}
 .question{
     margin-top: 10px;
 }
 .radio{
     margin: 10px 0;
-    font-size: larger;
+    font-size: 30px;
     font-weight: 500;
+    gap: 20px;
 }
+.radio input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.text-area{
+    color: whitesmoke;
+    text-shadow: 1px 1px 5px #5f22d9;
+}
+input[type="submit"]:hover{
+    box-shadow: 5px 5px 5px #5007e2;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+

@@ -41,7 +41,7 @@
                 <br>
                 <br>
           </div>
-            <form action="" method="post">
+            <form action="https://formspree.io/f/mdkankgn" method="POST">
                 <div class="form-group">
                     <label for="team-name" class="label-name">TEAM NAME</label>
                     <br>
@@ -54,7 +54,7 @@
                     <br>
                     <input type="tel" name="contact-number" id="contact-number" placeholder="ENTER YOUR CONTACT NUMBER" class="input-fields" minlength="10" maxlength="11" required>
                 <div class="combo">
-                    <h1 style="text-align: center; margin-top: 10px;">Members</h1>
+                    <h1 style="text-align: center; margin-top: 10px; color: #fc6601;">Members</h1>
                     <div class="club-line"></div>
                 </div>
                 <div class="member-container">
@@ -93,7 +93,7 @@
 
                     </div>
                 </div>
-                <div class="co-form">
+                <div class="co-form" style="color: #fc6601;">
                     <div class="radio" > <span>DO YOU HAVE CAR?</span>
                         <input type="radio" id="car-yes" name="car" value="yes" required>
                         <label for="car-yes">YES</label>
@@ -103,25 +103,25 @@
                 </div>
 
                 <div id="car-details" >
-                    <label for="car-type" class="label-name">Which Components do you have?</label>
+                    <label for="car-type" class="label-name" style="border-bottom: 20px;">Which Components do you have?</label>
                     <br>
                     <input type="checkbox" name="car-type" id="car-type-1" value="2 ir sensors">
-                    <label for="car-type-1">2 IR Sensors</label>
+                    <label for="car-type-1" class="car-type">2 IR Sensors</label>
                     <br>
                     <input type="checkbox" name="car-type" id="car-type-2" value="DRV8833">
-                    <label for="car-type-2">DRV8833 Driver</label>
+                    <label for="car-type-2" class="car-type">DRV8833 Driver</label>
                     <br>
                     <input type="checkbox" name="car-type" id="car-type-3" value="L298N">
-                    <label for="car-type-3">Breadboard</label>
+                    <label for="car-type-3" class="car-type">Breadboard</label>
                     <br>
                     <input type="checkbox" name="car-type" id="car-type-4" value="4 AA Battries">
-                    <label for="car-type-4">4 AA Battries</label>
+                    <label for="car-type-4" class="car-type">4 AA Battries</label>
                     <br>
                     <input type="checkbox" name="car-type" id="car-type-5" value="2 DC Moters">
-                    <label for="car-type-5">2 DC Motor</label>
+                    <label for="car-type-5" class="car-type">2 DC Motor</label>
                     <br>
                     <input type="checkbox" name="car-type" id="car-type-6" value="2 Tyres">
-                    <label for ="car-type-6">2 Tyres</label>
+                    <label for ="car-type-6" class="car-type">2 Tyres</label>
                 </div>
                 <div id="no-car-details" style="display: none;">
                     <p>Please contact to Authority</p>
@@ -153,7 +153,8 @@ VANTA.NET({
 minHeight: window.innerHeight,
 minWidth: window.innerWidth,
   scaleMobile: 1.00,
-  color: 0xd74646
+  color: 0x700dff,
+  backgroundColor: 0x0
 })
 </script>
 </body>
