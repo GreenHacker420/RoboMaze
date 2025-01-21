@@ -17,6 +17,7 @@
                  0 0 150px #0072ff,
                  0 0 200px #0072ff;
     font-family: 'Jersey 15', sans-serif;
+    margin-bottom: 150px;
 }
 
 
@@ -97,11 +98,6 @@ input[type="submit"]{
     margin-top: 20px;
     
 }
-.class2{
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    padding: 0 5px 0 5px;
-}
 
 
 .car-type{
@@ -132,3 +128,20 @@ input[type="submit"]:hover{
     transform: scale(1.01);
 }
 
+.robo-text{
+    z-index:0;
+    position: absolute;
+    left: 500px;
+}
+.maze-text{
+    z-index: 3;
+    position: absolute;
+    top: 80px;
+    left:660px;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 5px 5px 5px #5007e2;
+    cursor: pointer;
+    transform: scale(1.01);
+}
