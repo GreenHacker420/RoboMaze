@@ -10,8 +10,11 @@
     font-size: 8em;
     color: #fff;
     padding: 11px 19px;
-    margin: 0 aut;
-    animation: animate 3s linear infinite;
+    margin: 0 auto;
+    margin-bottom: 210px;
+    font-family: 'Jersey 15', sans-serif;
+}
+    /* animation: animate 3s linear infinite;
     text-shadow: 0 0 50px #0072ff, 
                  0 0 100px #0072ff, 
                  0 0 150px #0072ff,
@@ -28,7 +31,7 @@
     to {
       filter: hue-rotate(360deg);
     }
-  }
+  } */
 
 .texthead{
     margin-top: 50px;
@@ -136,12 +139,17 @@ input[type="submit"]:hover{
 .maze-text{
     z-index: 3;
     position: absolute;
-    top: 80px;
-    left:660px;
+    top: 95px;
+    left:670px;
 }
 
 input[type="submit"]:hover{
     box-shadow: 5px 5px 5px #5007e2;
     cursor: pointer;
     transform: scale(1.01);
+}
+.car_no{
+    color: #fff;
+    font-size: 20px;
+    
 }
