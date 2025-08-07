@@ -5,167 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robotics Club</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-<body id="main">
-    <nav>
-    <h1 class="heading"><span class="robo-text">ROBO</span> <span class="maze-text">MAZE</span></h1>
-    </nav>
-    <div class="container">
-        <div class="head">
-            <h1 class="texthead">Registration Form</h1>
-            <h2 class="text">Fill in the form to register for RoboMaze and secure your spot in this exciting event.</h2>
+<body>
+    <!-- Vanta Background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <nav>
+            <h1 class="heading"><span class="robo-text">IRIS</span></h1>
+        </nav>
+
+        <div class="container">
+            <div class="head">
+                <h1 class="texthead">Interest Form</h1>
+                <h2 class="text">Fill in the form to express your interest.</h2>
+            </div>
+
+            <div class="form-container">
+                <div class="form">
+                    <h1 class="form-heading">IRIS Robotics Club Interest Form</h1>
+                    <form id="iris-interest-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="iris-name" class="label-name">Name</label>
+                            <input type="text" name="iris-name" id="iris-name" placeholder="Enter your name" class="input-fields" required>
+
+                            <label for="iris-mobile" class="label-name">Mobile No.</label>
+                            <input type="tel" name="iris-mobile" id="iris-mobile" placeholder="Enter your mobile number" class="input-fields" pattern="[0-9]{10}" required>
+
+                            <label for="iris-email" class="label-name">Email</label>
+                            <input type="email" name="iris-email" id="iris-email" placeholder="Enter your email" class="input-fields" required>
+
+                            <div class="question">
+                                <span class="label-name">Do you have past experience in robotics?</span>
+                                <div class="radio">
+                                    <label style="color: white;"><input type="radio" name="iris-experience" value="yes" required> Yes</label>
+                                    <label style="color: white;"><input type="radio" name="iris-experience" value="no"> No</label>
+                                </div>
+                            </div>
+
+                            <div id="iris-experience-details-container" class="hidden">
+                                <label for="iris-experience-details" class="label-name">If yes, please describe your experience:</label>
+                                <textarea id="iris-experience-details" name="iris-experience-details" class="text-area" rows="3" placeholder="Describe your experience..."></textarea>
+                            </div>
+
+                            <input type="submit" value="Submit" class="submit-button">
+                        </div>  
+                    </form>
+                </div>
+            </div>
         </div>
-     <div class="form-container">
-        <div class="form">
-            <h1 class="form-heading">RoboMaze</h1>
-          <div class="text-area" style="font-size: larger;">
-            <p><span style="font-weight: bold;">🚀 Welcome to ROBO MAZE !</span>
 
-                Are you ready to put your robotics skills to the ultimate test? 
-                
-                ROBO MAZE is the thrilling event where innovation meets challenge. Navigate your way through twists, turns, and obstacles as your robotic creation faces the ultimate maze adventure!
-                <br>
-                <span style="font-weight: bold;">📅 Event Details</span>
-                <ul>
-                <li>  <span style="font-weight: bold;">Date:</span> Saturday, 25th January 2025</li>
-                
-                <li><span style="font-weight: bold;">Time:</span> 10:00 AM onwards</li>
-                
-                <li><span style="font-weight: bold;">Venue:</span> Classroom 2</li>
-                </ul>
-                <span style="font-weight: bold;">🎯 Who Can Participate? </span>
-                The event is open to teams of up to 3 members, led by a passionate team leader. Each team will compete to design, program, and guide a robotic car through the maze, testing creativity, precision, and problem-solving skills.
-                <br>
-                Prepare to showcase your robotics expertise, work collaboratively, and aim for victory in ROBO MAZE! 🚗🤖</p>
-                <br>
-                <br>
-          </div>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="team-name" class="label-name">TEAM NAME</label>
-                    <br>
-                    <input type="text" name="team-name" id="team-name" placeholder="ENTER YOUR TEAM NAME" class="input-fields"required>
-                    
-                    <label for="leader-name" class="label-name">TEAM LEADER NAME</label>
-                    <br>
-                    <input type="text" name="leader-name" id="leader-name" placeholder="ENTER YOUR TEAM LEADER NAME" class="input-fields"required>
-                    <label for="contact-number" class="label-name">CONTACT NUMBER</label>
-                    <br>
-                    <input type="tel" name="contact-number" id="contact-number" placeholder="ENTER YOUR CONTACT NUMBER" class="input-fields" minlength="10" maxlength="11" required>
-                <div class="combo">
-                    <h1 style="text-align: center; margin-top: 10px; color: #fc6601;">Members</h1>
-                    <div class="club-line"></div>
-                </div>
-                <div class="member-container">
-                    <div class="class1">
-                        <label for="member1" class="label-name">MEMBER 1</label>
-                        <br>
-                        <input type="text" name="member1" id="member1" placeholder="ENTER MEMBER 1 NAME" class="input-fields" required>
-                        <label for="member1-email" class="label-name">ADYPU MAIL ID</label>
-                        <br>
-                        <input type="email" name="member1-email" id="member1-email" placeholder="ENTER MEMBER 1 EMAIL ID" class="input-fields" required>
-                        <label for="member1-urn" class="label-name">URN</label>
-                        <br>
-                        <input type="text" name="member1-urn" id="member1-urn" placeholder="ENTER MEMBER 1 URN" class="input-fields" required>
-                    </div>
-                    <div class="class2">
-                        <label for="member2" class="label-name">MEMBER 2</label>
-                        <br>
-                        <input type="text" name="member2" id="member2" placeholder="ENTER MEMBER 2 NAME" class="input-fields" required>
-                        <label for="member2-email" class="label-name">ADYPU MAIL ID</label>
-                        <br>
-                        <input type="email" name="member2-email" id="member2-email" placeholder="ENTER MEMBER 2 EMAIL ID" class="input-fields " required>
-                        <label for="member2-urn" class="label-name">URN</label>
-                        <br>
-                        <input type="text" name="member2-urn" id="member2-urn" placeholder="ENTER MEMBER 2 URN" class="input-fields" required>
-                    </div>
-                    <div class="class3">
-                        <label for="member3" class="label-name">MEMBER 3</label>
-                        <br>
-                        <input type="text" name="member3" id="member3" placeholder="ENTER MEMBER 3 NAME" class="input-fields"  required>
-                        <label for="member3-email" class="label-name">ADYPU MAIL ID</label>
-                        <br>
-                        <input type="email" name="member3-email" id="member3-email" placeholder="ENTER MEMBER 3 EMAIL ID" class="input-fields" required>
-                        <label for="member3-urn" class="label-name">URN</label>
-                        <br>
-                        <input type="text" name="member3-urn" id="member3-urn" placeholder="ENTER MEMBER 3 URN" class="input-fields" required>
-
-                    </div>
-                </div>
-                <div class="co-form" style="color: #fc6601;">
-                    <div class="radio" > <span>DO YOU HAVE CAR?      </span>
-                        <input type="radio" id="car-yes" name="car" value="yes" required>
-                        <label for="car-yes">  YES</label>
-                        <input type="radio" id="car-no" name="car" value="no" required>
-                        <label for="car-no">   NO</label>
-                    </div>
-                </div>
-
-                <div id="car-details" >
-                    <label for="car-type" class="label-name" style="border-bottom: 20px;">Which Components do you have?</label>
-                    <br>
-                    <input type="checkbox" name="car-type" id="car-type-1" value="2 ir sensors">
-                    <label for="car-type-1" class="car-type">2 IR Sensors</label>
-                    <br>
-                    <input type="checkbox" name="car-type" id="car-type-2" value="DRV8833">
-                    <label for="car-type-2" class="car-type">DRV8833 Driver</label>
-                    <br>
-                    <input type="checkbox" name="car-type" id="car-type-3" value="Breadboard">
-                    <label for="car-type-3" class="car-type">Breadboard</label>
-                    <br>
-                    <input type="checkbox" name="car-type" id="car-type-4" value="4 AA Battries">
-                    <label for="car-type-4" class="car-type">4 AA Battries</label>
-                    <br>
-                    <input type="checkbox" name="car-type" id="car-type-5" value="2 DC Moters">
-                    <label for="car-type-5" class="car-type">2 DC Motor</label>
-                    <br>
-                    <input type="checkbox" name="car-type" id="car-type-6" value="2 Tyres">
-                    <label for ="car-type-6" class="car-type">2 Tyres</label>
-                </div>
-                <div id="no-car-details" style="display: none;">
-                    <p class="car_no">Contact the team member if u are truly interested and wants to participate!
-                        LIMITED SPOTS</p>
-                </div>
-                <input type="submit" value="REGISTER" class="submit-button">
-
-                </div>
-            </form>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-text">
+                <h1 class="footer-heading">IRIS</h1>
+                <p class="footer-para">© 2025 IRIS. All Rights Reserved.</p>
+            </div>
+            <div class="author">
+                <a href="https://github.com/GreenHacker420">
+                    <h1 class="author-heading">Developed by</h1>
+                    <p class="author-para">Harsh Hirawat aka GreenHacker</p>
+                </a>
+            </div>
         </div>
-     </div>
-
     </div>
 
-<div class="footer">
-    <div class="footer-text">
-        <h1 class="footer-heading">ROBO MAZE</h1>
-        <p class="footer-para">© 2025 ROBO MAZE. All Rights Reserved.</p>
-    </div>
-    <div class="author"><a href="https://github.com/GreenHacker420">
-        <h1 class="author-heading">Developed by</h1>
-        <p class="author-para">Harsh Hirawat aka GreenHacker</p></a>
-    </div>
-</div>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: window.innerHeight,
+            minWidth: window.innerWidth,
+            scaleMobile: 1.00,
+            color: 0x700dff,
+            backgroundColor: 0x000000
+        });
 
+        // Show/hide experience textarea
+        document.addEventListener('DOMContentLoaded', () => {
+            const radios = document.getElementsByName('iris-experience');
+            const details = document.getElementById('iris-experience-details-container');
+            const detailsField = document.getElementById('iris-experience-details');
 
-
-
-
-<script src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-<script>
-VANTA.NET({
-  el: "#main",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-minHeight: window.innerHeight,
-minWidth: window.innerWidth,
-  scaleMobile: 1.00,
-  color: 0x700dff,
-  backgroundColor: 0x0
-})
-</script>
+            Array.from(radios).forEach(radio => {
+                radio.addEventListener('change', () => {
+                    if (radio.value === 'yes') {
+                        details.classList.remove('hidden');
+                        detailsField.required = true;
+                    } else {
+                        details.classList.add('hidden');
+                        detailsField.required = false;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
